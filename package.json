@@ -2,7 +2,6 @@
   "name": "contact-list",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://galihdika.github.io/contact-list",
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
     "@babel/core": "^7.16.0",
