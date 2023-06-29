@@ -81,8 +81,7 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest",
-      "babel-preset-react-app"
+      "react-app/jest"
     ]
   },
   "browserslist": {
