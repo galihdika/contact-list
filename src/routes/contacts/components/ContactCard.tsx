@@ -10,10 +10,7 @@ import './ContactCard.scss';
 const ContactCard: React.FC<User> = ({...user}) => {
   const { data: photoUrl, isLoading } = useQuery<string>(
     [`contact-photo-${user.id}`],
-    () => fetch(`https://avatars.dicebear.com/v2/avataaars/${user.username}.svg?options[mood][]=happy`).then((res) => {
-    console.log('sadasd', res.text())  
-    return res.blob()
-    }).then(URL.createObjectURL),
+    () => fetch(`https://avatars.dicebear.com/v2/avataaars/${user.username}.svg?options[mood][]=happy`).then((res) => res.blob()).then(URL.createObjectURL),
   );
 
   return (
