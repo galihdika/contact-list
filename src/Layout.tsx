@@ -77,7 +77,7 @@ const Header: React.FC<Props> = ({ children, className }) => {
 
 const Footer: React.FC<Props> = ({children, className}) => {
   return (
-    <Layout.Footer className={twMerge("bg-yellow-100 sticky bottom-0", className)}>
+    <Layout.Footer className={twMerge("bg-yellow-100 fixed bottom-0 w-full", className)}>
       {children ?? <div className="text-slate-600"><CopyrightCircleTwoTone/> Galih Dika Pranata</div>}
     </Layout.Footer>
   )
