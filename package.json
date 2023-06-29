@@ -2,6 +2,7 @@
   "name": "contact-list",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://galihdika.github.io/contact-list",
   "dependencies": {
     "@ant-design/icons": "^5.1.4",
     "@babel/core": "^7.16.0",
@@ -71,6 +72,8 @@
     "workbox-webpack-plugin": "^6.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
@@ -78,11 +81,9 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ],
-    "env": {
-      "NODE_ENV": "development"
-    }
+      "react-app/jest",
+      "babel-preset-react-app"
+    ]
   },
   "browserslist": {
     "production": [
@@ -151,5 +152,8 @@
     "presets": [
       "react-app"
     ]
+  },
+  "devDependencies": {
+    "gh-pages": "^5.0.0"
   }
 }
